@@ -1,0 +1,169 @@
+div,
+li,
+ul,
+a {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto';
+}
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.section-title {
+  margin-bottom: 40px;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.element-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.element-uppercase {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4A4A4F;
+  text-transform: uppercase;
+}
+.section {
+  padding: 80px 0;
+}
+.news .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.news .list .item {
+  width: 50%;
+  margin-bottom: 80px;
+}
+.news .list .item .link {
+  display: inline-block;
+  padding: 0 15px;
+  height: 100%;
+  text-decoration: none;
+}
+.news .list .item .image-wrapper {
+  width: 100%;
+}
+.news .list .item .image-wrapper .image {
+  width: 100%;
+}
+.news .list .item .name {
+  position: relative;
+  font-size: 48px;
+  line-height: 54px;
+  color: #000000;
+}
+.news .list .item .name:after {
+  position: absolute;
+  content: '';
+  bottom: -20px;
+  left: 0;
+  width: 0;
+  height: 20px;
+  background-color: #B51C26;
+  transition: width 0.5s ease-out;
+}
+.news .list .item :hover .name:after {
+  width: 100%;
+}
+.team .list {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.team .list .item {
+  height: 442px;
+  width: 33.3%;
+}
+.team .list .item .link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.services .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services .list .item {
+  width: 25%;
+  margin-bottom: 60px;
+}
+.services .list .item .link {
+  width: 100%;
+  height: 100%;
+}
+.services .list .item .link .image-wrapper {
+  width: 100%;
+  height: 340px;
+}
+.services .list .item .link .image-wrapper .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.services .list .item .link .name {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 16px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+.services .list .item .link .name:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 8px;
+  width: 0;
+  background: #B51C26;
+  transition: width 0.5s ease-out;
+}
+.services .list .item:hover .name:after {
+  width: 100%;
+}
+.partners .list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -16px;
+}
+.partners .list .item {
+  width: 20%;
+  height: 136px;
+  padding: 0 16px;
+}
+.partners .list .item .link {
+  display: inline-block;
+  padding: 8px 24px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #C4C4C4;
+}
+.partners .list .item .link .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.partners .list .item .link .image-wrapper .image {
+  max-width: 100%;
+  max-height: 100%;
+}
